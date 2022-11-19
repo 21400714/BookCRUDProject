@@ -16,7 +16,7 @@
             if (a) location.href='delete_ok.jsp?id=' + id;
         }
     </script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 <h1>Books</h1>

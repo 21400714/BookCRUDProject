@@ -6,7 +6,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>서적 정보</title>
+    <title>View Book</title>
+    <link rel="stylesheet" type="text/css" href="book.css">
 </head>
 <body>
 <%
@@ -15,7 +16,7 @@
     BookVO u= bookDAO.getOne(Integer.parseInt(id));
     request.setAttribute("vo", u);
 %>
-<h1>서적 정보 보기</h1>
+<h1>View Book</h1>
 <table id="edit">
     <tr>
         <td>Photo</td><td><c:if test="${vo.getPhoto() ne ''}"><br />
@@ -46,7 +47,7 @@
         <td>Topic</td><td>${vo.getTopic()}</td>
     </tr>
 </table>
-<button type="button" onclick="history.back()">뒤로 가기</button>
-<button type="button" onclick="location.href='editform.jsp?id=${vo.getSid()}'">서적 수정</button>
+<button type="button" class="button button4" onclick="history.back()">Back</button>
+<button type="button" class="button button2" onclick="location.href='editform.jsp?id=${vo.getSid()}'">Edit</button>
 </body>
 </html>
